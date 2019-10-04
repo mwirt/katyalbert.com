@@ -1,0 +1,17 @@
+---
+layout: plain
+title: Katy Albert | Videos
+---
+<div class="video-wrap">
+<h1 class="video-heading post-section-title">VIDEOS</h1>
+<div class="row">
+{% include videonavbar.html %}
+</div>
+<div class="video-list-wrap">
+{% for post in site.categories.video %}
+<article>
+{{ post }}
+</article>
+{% endfor %}
+</div>
+</div>

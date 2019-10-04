@@ -1,0 +1,28 @@
+<div class="video-post-wrap" id="{{ page.postid }}">
+<div class="post">
+	<h2 class="video-title">{{ page.title }}</h2>
+	{% if page.type == "vimeo" %}
+	<div class=vimeo-overlay-wrap>
+	<div class="vimeo-embed-wrap">
+	<div class="video-embed">
+		<iframe src="https://player.vimeo.com/video/{{ page.video-id | excape }}" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+	</div>
+</div>
+	{% if page.overlay == true %}
+	<div class="vimeo-overlay">
+		{{ page.img-overlay }}
+	</div>
+		{% endif %}
+</div>
+
+
+	{% else %}
+	<div class="video-embed">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/{{ page.video-id | escape }}" frameborder="0" allowfullscreen></iframe>
+	</div>
+	{% endif %}
+	<div class="video-description">
+		{{ content }}
+	</div>
+</div>
+</div>

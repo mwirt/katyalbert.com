@@ -1,0 +1,224 @@
+html
+
+  height: 100%
+
+body
+  height: 100%
+  margin: 0
+  background: linear-gradient($a-color, $d-color)
+  background-repeat: no-repeat
+  background-attachment: fixed
+  @media (max-width: 800px)
+    background: $a-color
+    background-attachment: initial
+
+*, ::before, ::after
+
+
+.main-home
+  white-space: nowrap
+
+.home-button
+  display: inline-block
+  margin: 0
+  font-weight: 700
+
+
+.feed
+  max-width: 960px
+  display: block
+  margin: auto
+  background-color: $b-color
+
+
+.page
+  display: inline-block
+  margin-top: 50px
+
+.video-embed
+  position: relative
+  padding-bottom: 56.25%
+  height: 0
+  overflow: hidden
+  max-width: 100%
+  margin-bottom: 25px
+  iframe, object, embed
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+
+.main-button-wrap
+  text-align: center
+  position: relative
+  h2
+    font-size: 1.4em
+
+
+.main-button
+  display: inline-block
+  margin: auto
+  position: relative
+  z-index: 1
+  opacity: 1
+  max-width: 200px
+  max-height: 200px
+  -webkit-transition: all 0.25s ease-in-out
+  -moz-transition: all 0.25s ease-in-out
+  -o-transition: all 0.25s ease-in-out
+  -ms-transition: all 0.25s ease-in-out
+  transition: all 0.25s ease-in-out
+
+
+
+
+
+.button-text
+  opacity: 0
+  position: absolute
+  z-index: 0
+  margin: auto
+  right: 0
+  left: 0
+  top: 50%
+  margin-top: -25px
+@media(max-width: 800px)
+  .button-text
+    opacity: 1
+    z-index: 10
+    text-shadow: 0px 0px 4px $b-color
+  .main-button:hover
+    opacity: 1
+  .page
+    margin-top: 0px
+
+.main-button:hover
+  opacity: 0
+  -webkit-transition: all 0.25s ease-in-out
+  -moz-transition: all 0.25s ease-in-out
+  -o-transition: all 0.25s ease-in-out
+  -ms-transition: all 0.25s ease-in-out
+  transition: all 0.25s ease-in-out
+.main-button-wrap:hover
+  .button-text
+    opacity: 1
+    color: $b-color
+
+.katyalbert
+  font-size: 1.3em
+  margin: 10px 0 0 10px
+  a
+    text-decoration: none
+
+.sponges
+  margin-top: 60px
+
+.home-photo
+  position: fixed
+  z-index: 1 !important
+  top: 0
+
+.videonavbar
+  z-index: 1 !important
+  height: 50px
+
+.video-list-wrap
+  margin-top: -200px
+
+.videonavbar-list
+  font-size: 0
+  background: transparent
+  display: inline-block
+  li
+    display: inline
+    padding: 0
+    margin: 0
+  a
+    text-decoration: none
+
+
+.videonavbar-img
+  height: 50px
+  width: 50px
+  opacity: 0.85
+
+.videonavbar-img:hover
+  opacity: 1
+
+.video-heading
+  margin: 50px auto
+  text-align: center
+
+.video-title
+  padding-top: 100px
+
+.archive-wrap
+  margin-top: 100px
+  max-width: 960px
+  margin: auto
+  width: 100%
+  
+.post
+  max-width: 960px
+  background: none
+  margin: 150px auto
+  width: 100%
+
+.post-img
+  display: block
+  margin: 0 auto
+  max-width: 100%
+  height: auto
+
+.video-post-wrap
+  width: 100%
+  max-width: 100% 
+
+.video-wrap, .upcoming-wrap
+  max-width: 960px
+  margin: auto
+
+
+
+.video-description
+  max-width: 960px
+  padding: 0 10px
+  
+
+.password-image
+  width: 100%
+  max-width: 960px
+
+.post-vid
+  min-width: 100%
+  height: auto
+  video
+    width: 100%
+    height: auto
+
+.vimeo-overlay-wrap
+  position: relative
+.vimeo-overlay-wrap:hover
+  .vimeo-overlay
+    display: none
+
+
+.vimeo-overlay
+  position: absolute
+  top: 0
+  width: 100%
+  height: 100%
+  overflow: hidden
+  img
+    width: 100%
+    height: auto
+
+.post-section-title
+  text-align: center
+
+.entry
+  padding: 0 10px
+
+.video-title, .title
+  padding-left: 10px

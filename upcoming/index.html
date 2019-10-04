@@ -1,0 +1,12 @@
+---
+layout: plain
+title: Katy Albert | Upcoming
+---
+<div class="upcoming-wrap">
+<header><h1 class="post-section-title">Upcoming Work</h1></header>
+{% for post in site.categories.upcoming reversed %}
+<article>
+{{ post }}
+</article>
+{% endfor %}
+</div>
